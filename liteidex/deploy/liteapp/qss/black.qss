@@ -3,14 +3,14 @@
 QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
 QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog {
 	background-color: #222222;
-	color: #BBBBBB;
+	color: #FFFFFF;
 	font-family: "Segoe UI";
 }
 
 /* === QWidget === */
 QWidget:window {
 	background: #222222;
-	color: #BBBBBB;
+	color: #FFFFFF;
 	font-family: "Segoe UI";
 }
 
@@ -18,7 +18,7 @@ QWidget:window {
 QToolTip {
 	background-color: #000000;
     border: 2px solid #333333;
-	color: yellow;
+	color: white;
 }
 
 /* === QPushButton === */
@@ -37,14 +37,14 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: #111111;
 	border-color: #333333;
-	color: yellow;
+	color: white;
 }
 
 QPushButton:disabled {
 	color: #333333;
 }
 
-/* === Checkable items === */
+/* === Checkable items === 
 QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
 	width: 16px;
 	height: 16px;
@@ -57,7 +57,7 @@ QRadioButton::indicator {
 }
 
 QCheckBox::indicator::checked, QRadioButton::indicator::checked, QTreeView::indicator::checked {
-	background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #111111);
+	background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #FFFFFF, stop:1 #111111);
 }
 
 QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QTreeView::indicator:disabled {
@@ -65,9 +65,9 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QTreeView::indi
 }
 
 QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disabled, QTreeView::indicator::checked:disabled {
-	background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #444444);
+	background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #FFFFFF, stop:1 #444444);
 }
-
+*/
 /* === QComboBox === */
 QComboBox {
 	background-color: black;
@@ -96,7 +96,7 @@ QGroupBox {
 }
 
 QGroupBox::title {
-	color: yellow;
+	color: white;
 	subcontrol-origin: margin;
 	subcontrol-position: top left;
 	margin-left: 5px;
@@ -113,7 +113,7 @@ QTabBar::tab {
 	background: transparent;
 	border: 1px solid #333333;
 	border-bottom: none;
-	color: #BBBBBB;
+	color: #FFFFFF;
 	padding-left: 5px;
 	padding-right: 10px;
 	padding-top: 3px;
@@ -130,7 +130,7 @@ QTabBar::tab:selected {
 	background-color: #111111;
 	border: solid #fff;
 	border-width: 1px 1px 0px;
-	color: yellow
+	color: white
 }
 
 /* === QToolBar === */
@@ -142,8 +142,7 @@ QToolBar {
 
 QToolBar:handle {
 	background: #222222;
-	border-left: 1px dotted yellow;
-	color: #BBBBBB;
+	color: #FFFFFF;
 }
 
 QToolBar::separator {
@@ -180,7 +179,7 @@ QToolButton::menu-button:hover {
 
 QToolButton:checked, QToolButton:pressed {
 	background-color: #111111;
-	color: yellow;
+	color: white;
 }
 
 /* === QMenu === */
@@ -322,7 +321,7 @@ QScrollBar:left-arrow:horizontal, QScrollBar:right-arrow:horizontal {
 /* =================== */
 QLineEdit, QListView, QTreeView, QTableView, QAbstractSpinBox {
 	background-color: black;
-	color: #BBBBBB;
+	color: #FFFFFF;
 	border: 1px solid #333333;
 }
 
@@ -333,10 +332,14 @@ QAbstractScrollArea, QLineEdit, QTextEdit, QAbstractSpinBox, QComboBox {
 }
 
 /* === QHeaderView === */
+QHeaderView {
+	background: #222222;
+}
+
 QHeaderView::section {
 	background: #222222;
 	border: 0;
-	color: #BBBBBB;
+	color: #FFFFFF;
 	padding: 3px 0 3px 4px;
 }
 
@@ -346,8 +349,8 @@ QListView::item:hover {
 }
 
 QListView::item:selected {
-	background: #111111;
-	color: yellow;
+	background: white;
+	color: black;
 }
 
 /* === QTableView === */
@@ -356,23 +359,21 @@ QTableView::item:hover {
 }
 
 QTableView::item:hover {
-	background: #111111;
-	color: yellow;
+	background: white;
+	color: black;
 }
 
 /* === QTreeView === */
-QTreeView::item {
-	background: black;
+QTreeView {
 }
 
 QTreeView::item:hover {
-	background: #333333;
 }
 
 QTreeView::item:selected {
-	background: #111111;
-	color: yellow;
+
 }
+
 
 QTreeView::branch {
 
